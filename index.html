@@ -227,21 +227,22 @@
 
         }
 
-        function fetchAccountData(){
-            fetch('https://metacubesoftwarepvtltd2-dev-ed.develop.my.salesforce.com/services/data/v62.0/sobjects/Account/',{
+        async function fetchAccountData(){
+          const response = await fetch('https://metacubesoftwarepvtltd2-dev-ed.develop.my.salesforce.com/services/data/v62.0/sobjects/Account/',{
               method:'GET',  
               headers:{
                     'Accept':'application/json',
                     'Content-Type':'application/json',
                     'Authorization':'Bearer 00DdL00000BFpIU!AQEAQAK0FSbbjOUEPGG4_Q8mCdESWaUnypg88WrieNrt.m9wUYh78JmpSx0VQfyevr0ACjOtOwg7fwj5Fs4r39jX0ETzHfbp'
                 }
-            }).then((data)=>{
-                debugger;
-                console.log(data);
-            }).catch((error)=>{
-                console.log(error)
-            })
-        }
+            });
+            if (!response.ok) {
+              throw new Error(`HTTP error! status: ${response.status}`);
+          }
+  
+          const data = await response.json();
+          console.log(data); // Handle the data as needed
+      } 
 
         fetchAccountData()
       </script>
