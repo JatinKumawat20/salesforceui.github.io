@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salesforce Account</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="relative flex flex-col w-full h-full">
+        <h1 class="text-center font-bold p-4 text-2xl">Salesforce Account Handler</h1>
+    </div>
+    <div class="relative flex flex-row p-5 justify-around">
+        <div>
+            <label for="accountName" class="pe-3">Account Name</label>
+            <input class="shadow-md border-slate-200 rounded-lg border-2 w-100 p-1" type="text" name="accountName" id="accountName">
+        </div>
+        <div>
+            <button type="button" class="text-white bg-gray-800  hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Save</button>
+        </div>
+    </div>
+    <div class="relative flex flex-col w-full h-full overflow-scroll text-gray-700 bg-white shadow-md rounded-lg bg-clip-border">
+        <table class="w-full text-left table-auto min-w-max text-slate-800">
+          <thead>
+            <tr class="text-slate-500 border-b border-slate-300 bg-slate-50">
+              <th class="p-4">
+                <p class="text-sm leading-none font-normal">
+                  Project Name
+                </p>
+              </th>
+              <th class="p-4">
+                <p class="text-sm leading-none font-normal">
+                  Start Date
+                </p>
+              </th>
+              <th class="p-4">
+                <p class="text-sm leading-none font-normal">
+                  End Date
+                </p>
+              </th>
+              <th class="p-4">
+                <p class="text-sm leading-none font-normal">
+                  Owner
+                </p>
+              </th>
+              <th class="p-4">
+                <p class="text-sm leading-none font-normal">
+                  Budget
+                </p>
+              </th>
+              <th class="p-4">
+                <p></p>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="hover:bg-slate-50">
+              <td class="p-4">
+                <p class="text-sm font-bold">
+                  Project Alpha
+                </p>
+              </td>
+              <td class="p-4">
+                <p class="text-sm">
+                  01/01/2024
+                </p>
+              </td>
+              <td class="p-4">
+                <p class="text-sm">
+                  30/06/2024
+                </p>
+              </td>
+              <td class="p-4">
+                <p class="text-sm">
+                  John Michael
+                </p>
+              </td>
+              <td class="p-4">
+                <p class="text-sm">
+                  $50,000
+                </p>
+              </td>
+              <td class="p-4">
+                <a href="#" class="text-sm font-semibold ">
+                  Edit
+                </a>
+              </td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="p-4">
+                <p class="text-sm font-bold">
+                  Beta Campaign
+                </p>
+              </td>
+              <td class="p-4">
+                <p class="text-sm">
+                  15/02/2024
+                </p>
+              </td>
+              <td class="p-4">
+                <p class="text-sm">
+                  15/08/2024
+                </p>
+              </td>
+              <td class="p-4">
+                <p class="text-sm">
+                  Alexa Liras
+                </p>
+              </td>
+              <td class="p-4">
+                <p class="text-sm">
+                  $75,000
+                </p>
+              </td>
+              <td class="p-4">
+                <a href="#" class="text-sm font-semibold ">
+                  Edit
+                </a>
+              </td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="p-4">
+                <p class="text-sm font-bold">
+                  Campaign Delta
+                </p>
+              </td>
+              <td class="p-4">
+                <p class="text-sm">
+                  01/03/2024
+                </p>
+              </td>
+              <td class="p-4">
+                <p class="text-sm">
+                  01/09/2024
+                </p>
+              </td>
+              <td class="p-4">
+                <p class="text-sm">
+                  Laurent Perrier
+                </p>
+              </td>
+              <td class="p-4">
+                <p class="text-sm">
+                  $60,000
+                </p>
+              </td>
+              <td class="p-4">
+                <a href="#" class="text-sm font-semibold ">
+                  Edit
+                </a>
+              </td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="p-4">
+                <p class="text-sm font-bold">
+                  Gamma Outreach
+                </p>
+              </td>
+              <td class="p-4">
+                <p class="text-sm">
+                  10/04/2024
+                </p>
+              </td>
+              <td class="p-4">
+                <p class="text-sm">
+                  10/10/2024
+                </p>
+              </td>
+              <td class="p-4">
+                <p class="text-sm">
+                  Michael Levi
+                </p>
+              </td>
+              <td class="p-4">
+                <p class="text-sm">
+                  $80,000
+                </p>
+              </td>
+              <td class="p-4">
+                <a href="#" class="text-sm font-semibold ">
+                  Edit
+                </a>
+              </td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="p-4">
+                <p class="text-sm font-bold">
+                  Omega Strategy
+                </p>
+              </td>
+              <td class="p-4">
+                <p class="text-sm">
+                  01/05/2024
+                </p>
+              </td>
+              <td class="p-4">
+                <p class="text-sm">
+                  01/11/2024
+                </p>
+              </td>
+              <td class="p-4">
+                <p class="text-sm">
+                  Richard Gran
+                </p>
+              </td>
+              <td class="p-4">
+                <p class="text-sm">
+                  $100,000
+                </p>
+              </td>
+              <td class="p-4">
+                <a href="#" class="text-sm font-semibold ">
+                  Edit
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <script>
+
+        function saveAccount(){
+
+        }
+
+        function setAccountData(data){
+
+        }
+
+        function fetchAccountData(){
+            fetch('https://metacubesoftwarepvtltd2-dev-ed.develop.lightning.force.com/services/data/v62.0/sobjects/Account/',{
+                headers:{
+                    'Accept':'application/json',
+                    'Content-Type':'application/json',
+                    'Authorization':'Bearer 00DdL00000BFpIU!AQEAQAK0FSbbjOUEPGG4_Q8mCdESWaUnypg88WrieNrt.m9wUYh78JmpSx0VQfyevr0ACjOtOwg7fwj5Fs4r39jX0ETzHfbp'
+                }
+            }).then((data)=>{
+                console.log(data);
+            })
+        }
+
+        fetchAccountData()
+      </script>
+</body>
+</html>
