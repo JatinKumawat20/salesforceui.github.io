@@ -229,7 +229,8 @@
 
         function fetchAccountData(){
             fetch('https://metacubesoftwarepvtltd2-dev-ed.develop.my.salesforce.com/services/data/v62.0/sobjects/Account/',{
-                headers:{
+              method:'GET',  
+              headers:{
                     'Accept':'application/json',
                     'Content-Type':'application/json',
                     'Authorization':'Bearer 00DdL00000BFpIU!AQEAQAK0FSbbjOUEPGG4_Q8mCdESWaUnypg88WrieNrt.m9wUYh78JmpSx0VQfyevr0ACjOtOwg7fwj5Fs4r39jX0ETzHfbp'
